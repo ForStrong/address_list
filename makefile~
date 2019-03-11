@@ -1,0 +1,33 @@
+all:create_link.o create_node.o delete_node_by_name.o display.o display_node.o give_node_data.o insert_node_sort,o is_link_exits.o is_malloc_ok.o make_empty.o modify_node_by_name.o run.o search_node_by_name.o show.o
+	gcc create_link.o create_node.o delete_node_by_name.o display.o display_node.o give_node_data.o insert_node_sort,o is_link_exits.o is_malloc_ok.o make_empty.o modify_node_by_name.o run.o search_node_by_name.o show.o -o all
+create_link.o:create_link.c
+	gcc -c create_link.c
+create_node.o:create_node.c
+	gcc -c create_node.c
+delete_node_by_name.o:delete_node_by_name.c
+	gcc -c delete_node_by_name.c
+display.o:display.c
+	gcc -c display.c
+display_node.o:display_node.c
+	gcc -c display_node.c
+give_node_data.o:give_node_data.c
+	gcc -c give_node_data.c
+insert_node_sort.o:insert_node_sort.c
+	gcc -c insert_node_sort.c
+is_link_exits.o:is_link_exits.c
+	gcc -c is_link_exits.c
+is_malloc_ok.o:is_malloc_ok.c
+	gcc -c display.c
+make_empty.o:make_empty.c
+	gcc -c make_empty.c
+modify_node_by_name.o:modify_node_by_name.c
+	gcc -c modify_node_by_name.c
+run.o:run.c
+	gcc -c run.c
+search_node_by_name.o:search_node_by_name.c
+	gcc -c search_node_by_name.c
+show.o:show.c
+	gcc -c show.c
+.PHONY:clean
+clean:
+	rm -rf *.o	
