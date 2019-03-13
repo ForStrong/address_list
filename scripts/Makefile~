@@ -1,5 +1,5 @@
 CC := gcc
-CFLAGS := -w -O3
+CFLAGS := -Wall -O3
 Libs = -lpthread
 Target := address_list
 Source := $(wildcard src/*.c)

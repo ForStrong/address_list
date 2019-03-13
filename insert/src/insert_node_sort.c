@@ -7,9 +7,7 @@ void insert_node_sort(Link head, Link new_node){
 	Link p = head->next;
 	Link q = head;
 	while(p != NULL){
-
 		if(strcmp(p->name,new_node->name)>0){
-
 			q->next = new_node;
 			new_node->next = p;
 			return;
@@ -18,6 +16,7 @@ void insert_node_sort(Link head, Link new_node){
 		p = p->next;
 	}
 	q->next = new_node;
+	new_node->next = NULL;
 
 }
 

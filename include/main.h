@@ -1,10 +1,11 @@
+#define num 20
 struct node{
-	char name[8];
-	char sex[4];
-	char birthday[12];
-	char phone[11];
-	char postcode[7];
-	char addr[30];
+	char name[num];
+	char sex[num];
+	char birthday[num];
+	char phone[num];
+	char postcode[num];
+	char addr[num];
 	struct node * next;
 };
 
