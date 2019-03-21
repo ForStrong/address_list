@@ -12,4 +12,4 @@
   1.可以连接多个客户端
   2.可以再nanopi上运行
   
-  github地址:https://github.com/huangaa/address_list-db
+  github地址:https://github.com/huangaa/address_list
