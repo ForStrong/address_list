@@ -1,8 +1,8 @@
 CC := gcc
 CFLAGS := -w -O3
-Libs = -lpthread
+Libs = -lpthread -lsqlite3
 Target := address_list
 Source := $(wildcard src/*.c)
 Objs := $(patsubst %.c,%.o,$(Source))
-Modules += check create delete give_data insert main modify search windows save_file
+Modules += add delete updata search main windows
 AllObjs := $(addsuffix /src/*.o,$(Modules))
